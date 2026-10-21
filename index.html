@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wearnanii | From within.</title>
+  <meta name="description" content="Wearnanii: prendas hechas desde dentro. Disciplina, propósito y pasión en cada prenda. Personaliza la tuya.">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:title" content="Wearnanii | From within.">
+  <meta property="og:description" content="Piezas hechas desde dentro. Personaliza tu prenda.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='black'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='white' font-family='sans-serif'%3EW%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Bodoni+Moda:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="progreso" id="progreso" aria-hidden="true"></div>
+  <div class="loader" id="loader" aria-hidden="true"><span>WEARNANII</span></div>
+
+ 
+  <header class="nav" id="nav">
+    <a href="#inicio" class="logo">WEARNANII<small>From within.</small></a>
+    <nav aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ========== INICIO / PORTADA ========== -->
+    <section id="inicio" class="hero">
+     <div class="hero__bg" style="background-image:url('img/portada2.png')"></div>
+      <div class="hero__txt">
+        <h1 class="up" style="--d:0">Nuevas<br>prendas</h1>
+        <p class="up" style="--d:1">Todo comienza desde dentro.</p>
+        <a href="#catalogo" class="btn up" style="--d:2">Comprar ahora</a>
+      </div>
+    </section>
+
+    
+    <div class="frase">
+      <p class="rv">Disciplina. Propósito. Pasión.<br><em>Así se construye quien eres.</em></p>
+    </div>
+
+    <!-- Cinta de texto en movimiento -->
+    <div class="cinta" aria-hidden="true"><div class="cinta__pista" id="cinta"></div></div>
+
+    <!-- ========== CATÁLOGO ========== -->
+    <!-- Las prendas se editan en datos.js, no aquí -->
+    <section id="catalogo">
+      <div class="wrap">
+        <h2 class="titulo rv">Catálogo</h2>
+        <div class="linea rv"></div>
+        <div class="grid" id="grid"><noscript><p>Activa JavaScript para ver el catálogo.</p></noscript></div>
+      </div>
+    </section>
+
+    <!-- ========== CÓMO COMPRAR ========== -->
+    <section class="pasos" aria-labelledby="pasosT">
+      <div class="wrap">
+        <h2 class="titulo rv" id="pasosT">Cómo comprar</h2>
+        <div class="linea rv"></div>
+        <ol class="pasos__lista">
+          <li class="rv"><span class="pasos__n" aria-hidden="true">1</span><h3>Elige tu prenda</h3><p>Escoge talla, color y la frase que quieras en tu prenda.</p></li>
+          <li class="rv"><span class="pasos__n" aria-hidden="true">2</span><h3>Paga con tarjeta</h3><p>Crédito o débito, en una pasarela segura que se abre en otra pestaña.</p></li>
+          <li class="rv"><span class="pasos__n" aria-hidden="true">3</span><h3>Envía tu recibo</h3><p>Mándalo por WhatsApp al <b data-cfg="telefonoRecibo"></b> para confirmar tu pedido.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="contacto">
+      <div class="wrap">
+        <h2 class="titulo rv">Contacto</h2>
+        <div class="linea rv"></div>
+        <div class="cols">
+         
+          <div class="datos rv">
+            <p><b>Correo</b><a id="lCorreo" href="#"><span data-cfg="correo"></span></a></p>
+            <p><b>Teléfono</b><a id="lTel" href="#"><span data-cfg="telefono"></span></a></p>
+            <p><b>Instagram</b><a id="lIg" href="#" target="_blank" rel="noopener"><span data-cfg="instagram"></span></a></p>
+            <p><b>Ubicación</b><span data-cfg="ubicacion"></span></p>
+          </div>
+          <form id="form" class="rv">
+            <input name="nombre" placeholder="Nombre" aria-label="Nombre" autocomplete="name" required>
+            <input name="email" type="email" placeholder="Correo" aria-label="Correo" autocomplete="email" required>
+            <textarea name="mensaje" rows="4" placeholder="Mensaje" aria-label="Mensaje" required></textarea>
+            <button class="btn btn--dark" type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Wearnanii. From within.</p>
+  </footer>
+
+  <button type="button" class="arriba" id="arriba" aria-label="Volver arriba"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg></button>
+
+  <!-- VENTANA DE COMPRA (se abre con "Comprar ahora" de cada prenda) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="mNombre">
+      <button class="modal__x" id="cerrar" aria-label="Cerrar">&times;</button>
+      <div class="modal__img" id="mImg"><div class="modal__vistas" id="mVistas"></div></div>
+      <div class="modal__info">
+        <h3 id="mNombre"></h3>
+        <p class="precio" id="mPrecio"></p>
+        <p id="mDesc"></p>
+        <p class="material" id="mMaterial"></p>
+        <div id="mOpciones"></div>
+        <div class="linea"></div>
+        <p class="aviso">Después de pagar, envía tu recibo al <b data-cfg="telefonoRecibo"></b>.</p>
+        <p class="pagar">Pagar con</p>
+        <button class="btn btn--dark" data-tipo="Credito">Tarjeta de crédito</button>
+        <button class="btn btn--line" data-tipo="Debito">Tarjeta de débito</button>
+        <a class="enviar" id="mWhats" href="#" target="_blank" rel="noopener">Enviar recibo por WhatsApp</a>
+        <small>El pago se abre en otra pestaña, en la pasarela segura.</small>
+      </div>
+    </div>
+  </div>
+  <script src="datos.js"></script>
+  <script src="main.js"></script>
+  <script src="frases.js"></script>
+   <script src="destacados.js"></script>
+   <script src="nuevas.js"></script>
+</body>
+</html>
