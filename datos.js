@@ -4,10 +4,10 @@
 
 // 👉 Datos de contacto, moneda y opciones de compra
 const CONFIG = {
-  correo:    "contacto@wearnanii.com",
-  telefono:  "+52 000 000 0000",
+  correo:    "wearnanii@gmail.com",
+  telefono:  "+52 220 276 9954",
   instagram: "@wearnanii_",
-  ubicacion: "Tu ciudad, País",
+  ubicacion: "CDMX, MÉXICO",
   moneda:    "MXN",
   local:     "es-MX",
 
