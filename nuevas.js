@@ -7,8 +7,8 @@
 
 // 
 const NUEVAS = [7, 11, 12, 5];
-const FOTO_NUEVAS = "img/nuevas-fondo.jpg";
-const FOTO_GRIS = "img/sudadera_gris.webp";
+const FOTO_NUEVAS = "nuevas-fondo.jpg";
+const FOTO_GRIS = "sudadera_gris.webp";
 const FUENTE_TITULO = "Bodoni Moda";
 const FONDO_NUEVAS = "#0e0e0e";
 /* ==========================================================
