@@ -65,7 +65,7 @@ const PRODUCTOS = [
   {
     id: 2,
     nombre: "SUDADERA CON GORRO FROM WITHIN",
-    precio: 450,
+    precio: 500,
     imagen: "sudadera_foundation_frente.webp",
     imagen2: "sudadera_foundation_atras.webp",
     descripcion: "Corte amplio, capucha doble y bolsillo frontal.",
@@ -88,7 +88,7 @@ const PRODUCTOS = [
   {
     id: 4,
     nombre: "SUDADERA SIN GORRO DISCIPLINA",
-    precio: 500,
+    precio: 450,
     imagen: "manga-larga_discipline-fade_frente.webp",
     imagen2: "manga-larga_discipline-fade_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
@@ -146,7 +146,7 @@ const PRODUCTOS = [
   {
     id: 9,
     nombre: "SUDADERA SIN GORRO FROM WITHIN",
-    precio: 430,
+    precio: 450,
     imagen: "manga-larga_foundation_frente.webp",
     imagen2: "manga-larga_foundation_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
