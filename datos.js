@@ -88,7 +88,7 @@ const PRODUCTOS = [
   {
     id: 4,
     nombre: "SUDADERA SIN GORRO DISCIPLINA",
-    precio: 450,
+    precio: 500,
     imagen: "manga-larga_discipline-fade_frente.webp",
     imagen2: "manga-larga_discipline-fade_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
