@@ -59,8 +59,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Sudadera negra de algodón pesado con logo grabado.",
     destacado: "fw-manga-larga.webp",
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 2,
@@ -70,8 +70,8 @@ const PRODUCTOS = [
     imagen2: "sudadera_foundation_atras.webp",
     descripcion: "Corte amplio, capucha doble y bolsillo frontal.",
     destacado: "fw-sudadera.webp",
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 3,
@@ -82,8 +82,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Playera básica de algodón suave, estampado discreto.",
     destacado: "disc-manga-larga.webp",
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 4,
@@ -93,8 +93,8 @@ const PRODUCTOS = [
     imagen2: "manga-larga_discipline-fade_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 5,
@@ -105,8 +105,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Pantalón jogger con cintura ajustable.",
     destacado: "disc-playera.webp",
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 6,
@@ -116,9 +116,9 @@ const PRODUCTOS = [
     imagen2: "manga-larga_god-first_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
     destacado: "gf-manga-larga.webp",
-    opciones: { Talla: ["Única"] },
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+   sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 7,
@@ -128,8 +128,8 @@ const PRODUCTOS = [
     imagen2: "sudadera_discipline_atras.webp",
     descripcion: "Corte amplio, capucha doble y bolsillo frontal.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 8,
@@ -140,8 +140,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Playera de algodón suave, estampado discreto.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 9,
@@ -151,8 +151,8 @@ const PRODUCTOS = [
     imagen2: "manga-larga_foundation_atras.webp",
     descripcion: "Sudadera sin capucha, corte clásico y cómodo.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 10,
@@ -163,8 +163,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Manga larga de algodón con la cruz en la espalda.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 11,
@@ -175,8 +175,8 @@ const PRODUCTOS = [
     vistaInicial: "espalda",
     descripcion: "Capucha doble y bolsillo frontal, con GOD FIRST en la espalda.",
     sinVitrina: true,   // true = no sale en la vitrina de la portada, solo en el catálogo
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   },
   {
     id: 12,
@@ -186,7 +186,7 @@ const PRODUCTOS = [
     imagen2: "playera_god-first_atras.webp",
     descripcion: "Playera de algodón suave, corte clásico y cómodo.",
     destacado: "gf-playera.webp",
-    linkCredito: "Paypal.me/wearnanii",
-    linkDebito:  "Paypal.me/wearnanii"
+    linkCredito: "https://paypal.me/wearnanii",
+    linkDebito:  "https://paypal.me/wearnanii"
   }
 ];
