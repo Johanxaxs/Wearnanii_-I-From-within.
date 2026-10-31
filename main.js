@@ -13,6 +13,7 @@ const dinero = n => new Intl.NumberFormat(CONFIG.local, { style: "currency", cur
 
 // Material de cada prenda: lo dice CONFIG.materiales según la primera palabra del nombre (o p.material en una prenda)
 const material = p => p.material || Object.entries(CONFIG.materiales || {}).find(([tipo]) => p.nombre.toUpperCase().startsWith(tipo))?.[1] || "";
+const fraseFija = p => !/FROM WITHIN/i.test(p.nombre);
 
 /* 1. Datos de contacto (desde CONFIG) */
 $$("[data-cfg]").forEach(el => (el.textContent = CONFIG[el.dataset.cfg]));
@@ -93,13 +94,13 @@ const abrirCompra = id => {
   previo = document.activeElement;
   actual = PRODUCTOS.find(p => p.id == id);
   // Vistas de la prenda: Frente y Espalda (si la prenda tiene imagen2)
-  vistas = [["Frente", actual.imagen], ["Espalda", actual.imagen2]].filter(v => v[1]);
+    vistas = [["Frente", actual.imagen], [actual.vista2 || "Espalda", actual.imagen2]].filter(v => v[1]);
   $("#mVistas").innerHTML = vistas.length > 1 ? vistas.map((v, k) => `<button type="button" class="vista${k ? "" : " activo"}" data-k="${k}">${v[0]}</button>`).join("") : "";
   if (actual.imagen2) new Image().src = actual.imagen2;   // la precarga para que el cambio sea instantáneo
   $("#mImg").style.backgroundImage = `url('${actual.imagen}')`;
   $("#mNombre").textContent = actual.nombre;
   $("#mPrecio").textContent = dinero(actual.precio);
-  $("#mDesc").textContent = actual.descripcion + " " + (CONFIG.personalizacion || "");
+    $("#mDesc").textContent = actual.descripcion + (fraseFija(actual) ? "" : " " + (CONFIG.personalizacion || ""));
   $("#mMaterial").textContent = material(actual) ? "Material: " + material(actual) : "";
 
   // Opciones (talla...): la primera queda elegida por defecto
