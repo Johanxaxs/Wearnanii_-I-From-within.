@@ -114,6 +114,7 @@ const FRASES = {
   // Al abrir una prenda, agrega "Frase: Ninguna / Ver frases" en la ventana de compra
   grid.addEventListener("click", e => {
     if (!e.target.closest(".card__btn")) return;
+         if (fraseFija(actual)) return;
     $$(".frase-op", panel).forEach(b => b.classList.remove("activo"));
     $("#fPropia").value = "";
     $("#mOpciones").insertAdjacentHTML("beforeend",
