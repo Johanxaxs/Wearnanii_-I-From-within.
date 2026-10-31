@@ -231,7 +231,7 @@ const PRODUCTOS = [
     linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
   },
   {
-    id: 19, nombre: "GORRA GOD FIRST", precio: 350,   // CAMBIAR PRECIO
+    id: 19, nombre: "GORRA GOD FIRST", precio: 250,   // CAMBIAR PRECIO
     imagen: "gorra_god-first_frente.webp", imagen2: "gorra_god-first_lateral.webp", vista2: "Lateral",
     descripcion: "Gorra negra con el logo bordado al frente, la cruz en un lado y GOD FIRST en el otro.",
     opciones: { Talla: ["Única"] }, sinFrases: true,
@@ -239,7 +239,7 @@ const PRODUCTOS = [
     linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
   },
   {
-    id: 20, nombre: "GORRO ESSENTIAL", precio: 250,   // CAMBIAR PRECIO
+    id: 20, nombre: "GORRO ESSENTIAL", precio: 180,   // CAMBIAR PRECIO
     imagen: "gorro_essential_frente.webp", imagen2: "gorro_essential_lateral.webp", vista2: "Detalle",
     descripcion: "Gorro tejido con el logo bordado en el doblez.",
     opciones: { Talla: ["Única"] }, sinFrases: true,
@@ -247,7 +247,7 @@ const PRODUCTOS = [
     linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
   },
   {
-    id: 21, nombre: "GORRO GOD FIRST", precio: 250,   // CAMBIAR PRECIO
+    id: 21, nombre: "GORRO GOD FIRST", precio: 180,   // CAMBIAR PRECIO
     imagen: "gorro_god-first_frente.webp", imagen2: "gorro_god-first_lateral.webp", vista2: "Detalle",
     descripcion: "Gorro tejido con el logo bordado y una cruz en el doblez.",
     opciones: { Talla: ["Única"] }, sinFrases: true,
@@ -255,7 +255,7 @@ const PRODUCTOS = [
     linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
   },
   {
-    id: 22, nombre: "GORRO BÁSQUET", precio: 250,   // CAMBIAR PRECIO
+    id: 22, nombre: "GORRO BÁSQUET", precio: 180,   // CAMBIAR PRECIO
     imagen: "gorro_basquet_frente.webp", imagen2: "gorro_basquet_lateral.webp", vista2: "Detalle",
     descripcion: "Gorro tejido con el logo bordado y un balón de básquet en el doblez.",
     opciones: { Talla: ["Única"] }, sinFrases: true,
