@@ -41,14 +41,12 @@ const CONFIG = {
   ]
 };
 
-// 👉 Tus prendas: copia un bloque { ... }, pégalo y cambia los datos.
-//    imagen:      foto de FRENTE (carpeta img/prendas/)
-//    imagen2:     foto de ESPALDA (se ve en la ventana de compra y al pasar el mouse en el catálogo)
-//    destacado:   foto transparente (frente y espalda juntos) para la portada (img/prendas/hero/)
-//    vistaInicial: "espalda"   (opcional) en el catálogo se ve primero la espalda; al pasar el mouse, el frente
-//    linkCredito: link de pago con tarjeta de crédito
-//    linkDebito:  link de pago con tarjeta de débito
-//    Opcional en una prenda: opciones: { Talla: ["Única"] }, colores: false
+  const COLORES_BASICOS = [
+  { nombre: "Negro",  hex: "#1b1b20" },
+  { nombre: "Blanco", hex: "#f4f4f4" },
+  { nombre: "Gris",   hex: "#a9a9ae" }
+];
+
 const PRODUCTOS = [
   {
     id: 1,
@@ -188,5 +186,107 @@ const PRODUCTOS = [
     destacado: "gf-playera.webp",
     linkCredito: "https://paypal.me/wearnanii",
     linkDebito:  "https://paypal.me/wearnanii"
+  },
+
+    {
+    id: 13, nombre: "PLAYERA DRY FIT FROM WITHIN", precio: 350,
+    imagen: "playera-dryfit_foundation_frente.webp", imagen2: "playera-dryfit_foundation_atras.webp", vistaInicial: "espalda",
+    descripcion: "Playera dry fit con el logo al frente y FROM WITHIN en la espalda.", material: "Tela dry fit",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 14, nombre: "PLAYERA DRY FIT GOD FIRST", precio: 350,
+    imagen: "playera-dryfit_god-first_frente.webp", imagen2: "playera-dryfit_god-first_atras.webp", vistaInicial: "espalda",
+    descripcion: "Playera dry fit con el logo al frente y la cruz GOD FIRST en la espalda.", material: "Tela dry fit",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 15, nombre: "COMPRESIÓN MANGA CORTA FROM WITHIN", precio: 550,
+    imagen: "compresion-manga-corta_foundation_frente.webp", imagen2: "compresion-manga-corta_foundation_atras.webp", vistaInicial: "espalda",
+    descripcion: "Compresión manga corta con el logo al frente y FROM WITHIN en la espalda.", material: "Tela de compresión",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 16, nombre: "COMPRESIÓN MANGA CORTA GOD FIRST", precio: 550,
+    imagen: "compresion-manga-corta_god-first_frente.webp", imagen2: "compresion-manga-corta_god-first_atras.webp", vistaInicial: "espalda",
+    descripcion: "Compresión manga corta con el logo al frente y la cruz GOD FIRST en la espalda.", material: "Tela de compresión",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 17, nombre: "COMPRESIÓN MANGA LARGA FROM WITHIN", precio: 600,
+    imagen: "compresion-manga-larga_foundation_frente.webp", imagen2: "compresion-manga-larga_foundation_atras.webp", vistaInicial: "espalda",
+    descripcion: "Compresión manga larga con el logo al frente y FROM WITHIN en la espalda.", material: "Tela de compresión",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 18, nombre: "COMPRESIÓN MANGA LARGA GOD FIRST", precio: 600,
+    imagen: "compresion-manga-larga_god-first_frente.webp", imagen2: "compresion-manga-larga_god-first_atras.webp", vistaInicial: "espalda",
+    descripcion: "Compresión manga larga con el logo al frente y la cruz GOD FIRST en la espalda.", material: "Tela de compresión",
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 19, nombre: "GORRA GOD FIRST", precio: 350,   // CAMBIAR PRECIO
+    imagen: "gorra_god-first_frente.webp", imagen2: "gorra_god-first_lateral.webp", vista2: "Lateral",
+    descripcion: "Gorra negra con el logo bordado al frente, la cruz en un lado y GOD FIRST en el otro.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 20, nombre: "GORRO ESSENTIAL", precio: 250,   // CAMBIAR PRECIO
+    imagen: "gorro_essential_frente.webp", imagen2: "gorro_essential_lateral.webp", vista2: "Detalle",
+    descripcion: "Gorro tejido con el logo bordado en el doblez.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 21, nombre: "GORRO GOD FIRST", precio: 250,   // CAMBIAR PRECIO
+    imagen: "gorro_god-first_frente.webp", imagen2: "gorro_god-first_lateral.webp", vista2: "Detalle",
+    descripcion: "Gorro tejido con el logo bordado y una cruz en el doblez.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 22, nombre: "GORRO BÁSQUET", precio: 250,   // CAMBIAR PRECIO
+    imagen: "gorro_basquet_frente.webp", imagen2: "gorro_basquet_lateral.webp", vista2: "Detalle",
+    descripcion: "Gorro tejido con el logo bordado y un balón de básquet en el doblez.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 23, nombre: "PASAMONTAÑAS ESSENTIAL", precio: 250,   // CAMBIAR PRECIO
+    imagen: "pasamontanas_essential_frente.webp", imagen2: "pasamontanas_essential_lateral.webp", vista2: "Lateral",
+    descripcion: "Pasamontañas tejido con el logo bordado.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 24, nombre: "PASAMONTAÑAS GOD FIRST", precio: 250,   // CAMBIAR PRECIO
+    imagen: "pasamontanas_god-first_frente.webp", imagen2: "pasamontanas_god-first_lateral.webp", vista2: "Lateral",
+    descripcion: "Pasamontañas tejido con el logo y una cruz bordados.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
+  },
+  {
+    id: 25, 
+    nombre: "PASAMONTAÑAS BÁSQUET", 
+    precio: 250,   // CAMBIAR PRECIO
+    imagen: "pasamontanas_basquet_frente.webp",
+     imagen2: "pasamontanas_basquet_lateral.webp", vista2: "Lateral",
+    descripcion: "Pasamontañas tejido con el logo y un balón de básquet bordados.",
+    opciones: { Talla: ["Única"] }, sinFrases: true,
+    colores: COLORES_BASICOS, sinVitrina: true,
+    linkCredito: "https://paypal.me/wearnanii", linkDebito: "https://paypal.me/wearnanii"
   }
 ];

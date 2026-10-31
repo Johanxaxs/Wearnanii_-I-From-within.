@@ -94,7 +94,7 @@ sec.style.setProperty("--ar", prueba.naturalWidth / prueba.naturalHeight);
   const gris = $(".nue__gris", sec);
   const acomodaGris = () => {
     if (matchMedia("(max-width:900px)").matches) { gris.style.top = ""; sec.style.minHeight = ""; return; }
-    const gh = gris.offsetHeight, top = Math.round(fondo.offsetTop + fondo.offsetHeight - gh * 0.11);
+        const gh = gris.offsetHeight, top = Math.round(fondo.offsetTop + fondo.offsetHeight + gh * 0.11);
     gris.style.top = top + "px";
     sec.style.minHeight = (top + gh) + "px";
   };
